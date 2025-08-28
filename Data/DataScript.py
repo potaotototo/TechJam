@@ -7,14 +7,16 @@ from typing import Dict, List, Any
 import os
 import stat
 
+FILE_DATA_PATH = "D:\private\Techjam\Data\Alaska\review-Alaska.json\review-Alaska.json"
+COMPRESSED_FILE_DATA_PATH = "D:\private\Techjam\Data\Alaska\review-Alaska.json.gz"
 def test_file_access():
     import os
     import gzip
     
     # Test both files
     files_to_test = [
-        "Data/Alaska/review-Alaska.json.gz",  # Try .gz first
-        "Data/Alaska/review-Alaska.json"
+        COMPRESSED_FILE_DATA_PATH,  # Try .gz first
+        FILE_DATA_PATH
     ]
     
     for file_path in files_to_test:
