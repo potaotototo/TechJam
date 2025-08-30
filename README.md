@@ -4,7 +4,7 @@ A machine learning solution for assessing the quality and relevancy of location-
 
 ## Overview
 
-Online platforms host massive volumes of reviews, but many are off-topic, generic, or even spam, making it difficult for businesses and users to extract meaningful insights. **Peanut BERTer** tackles this challenge by evaluating reviews along two key dimensions to surface genuine, valuable feedback.
+Online platforms host massive volumes of reviews, but many are off-topic, generic, or even spam or ingenuine, making it difficult for businesses and users to extract meaningful insights. **Peanut BERTer** tackles this challenge by evaluating reviews along two key dimensions to surface genuine, valuable feedback.
 
 ## Key Features
 
@@ -27,6 +27,8 @@ Our solution applies three essential filtering rules:
 1. **No Promotions** - Reviews should not contain promotional links
 2. **No Irrelevant Content** - Reviews must be about the location, not unrelated topics  
 3. **No Rant Without Visits** - Rants/complaints must come from actual visitors (inferred via content/metadata)
+
+Note that we penalise reviews based on the above general policies.
 
 ### 🌍 Advanced Processing Capabilities
 
@@ -87,14 +89,13 @@ Our solution specifically addresses the **relevancy** portion of review quality 
 - ✅ Surfacing reviews that provide genuine value to businesses and users
 - ✅ Maintaining high precision in quality assessment
 
+### What's New
+Our solution builds upon existing approaches that utilises the BERT model to differentiate genuine and ingenuine content. 
+On top of that, we account for the likelihood that the review might not be relevant to the location of interest. 
+
+To do these, we follow the following rules of thumb:
+
+
 ## Getting Started
 
 [Add installation and usage instructions here]
-
-## Contributing
-
-[Add contribution guidelines here]
-
-## License
-
-[Add license information here]
